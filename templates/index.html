@@ -1,0 +1,70 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Analytics</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+
+</head>
+
+<body class="container">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container">
+            	<a class="navbar-brand" href="#">HackerShrine</a>
+            	<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+            		<span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+            	</button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto"></ul>
+                    <span class="navbar-text actions"> <a href="#" class="login">Aniket Wattamwar</a>
+                    	<a href="https://www.linkedin.com/in/aniket-wattamwar-0a6658139/"><img src="static/img/linkedin.png" style="height: 30px;width: 30px;"></a>
+                    	<a href="https://github.com/aniketwattamwar"><img src="static/img/cat.png" style="height: 30px;width: 30px;"></a>
+                    	<a class="btn btn-success action-button" role="button" href="https://linktr.ee/aniketwattamwar">LinkTree</a></span>
+                    </div>
+            </div>
+        </nav>
+    </div>
+    <div class="jumbotron" style="background-color:rgb(255,255,255);">
+    	<img src="static/img/hr.jpg" style="width:912px;margin-top:-29px;height:232px;">
+        <h1 style="margin-top:18px;">HR Analytics</h1>
+        <p><br>Your client is a large MNC and they have 9 broad verticals across the organisation. One of the problem your client is facing is around identifying the right people for promotion (only for manager position and below) and prepare them in time.<br><br></p>
+        <p><a class="btn btn-primary" role="button" href="https://datahack.analyticsvidhya.com/contest/wns-analytics-hackathon-2018-1/#ProblemStatement">Details/Download Dataset</a></p>
+        <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2" style="margin-top:12px;padding-top:13px;">
+            <div class="intro"></div>
+            <div class="text">
+                <p>This website will let you download the prediction files by simply clicking on the respective models below.&nbsp;</p>
+                <figure></figure>
+            </div>
+        </div>
+        <div class="btn-toolbar">
+            <div class="btn-group" role="group"></div>
+        </div>
+        <form action="download" method="POST">
+        	{% csrf_token %} 
+        	 
+            
+            	<input type="submit" name="gNB" value="Gaussian Naive Bayes" class="btn btn-success">
+            	<input type="submit" name="multiNB" value="Multinomial Naive Bayes" class="btn btn-success">
+            	<input type="submit" name="rf" value="Random Forest" class="btn btn-success"> 
+        
+         
+        </form>
+        
+    <div class="article-clean"></div>
+    <div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
