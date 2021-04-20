@@ -23,7 +23,7 @@ path.py==12.4.0
 pickle5==0.0.10
 pluggy==0.13.1
 psutil==5.7.0
-py==1.8.1
+py==1.10.0
 pyparsing==2.4.7
 pytest==5.4.3
 pytest-shutil==1.7.0
