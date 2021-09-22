@@ -1,5 +1,5 @@
 dj-database-url==0.4.2
-Django==3.0.7
+Django==3.1.13
 apipkg==1.5
 atomicwrites==1.4.0
 attrs==19.3.0
